@@ -2,12 +2,14 @@ package com.drozdova.tms.lib;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class HomeWork4 {
     public static void main(String[] args) {
-//        task1();
+        task1();
         task2();
+        task3();
     }
 
     // Ввести n строк с консоли, найти самую короткую и самую длинную строки. Вывести найденные строки и их длину.
@@ -76,5 +78,22 @@ public class HomeWork4 {
         }
 
         System.out.println(builder);
+    }
+
+    // Ввести три строки с консоли. А затем:
+    // 1. Выведите на экран третью строку в неизменном виде.
+    // 2. Выведите на экран вторую строку, предварительно преобразовав ее к
+    // Нижнему регистру.
+    // 3. Выведите на экран первую строку, предварительно перевернув ее.
+    public static void task3() {
+        Scanner scan = new Scanner(System.in);
+        String str1 = scan.nextLine();
+        String str2 = scan.nextLine();
+        String str3 = scan.nextLine();
+
+        System.out.println(str3);
+        System.out.println(str2.toLowerCase(Locale.ROOT));
+        StringBuffer buffer = new StringBuffer(str1);
+        System.out.println(buffer.reverse());
     }
 }
