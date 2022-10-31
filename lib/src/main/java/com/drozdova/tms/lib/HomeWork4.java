@@ -38,6 +38,6 @@ public class HomeWork4 {
         }
 
         System.out.println("Min len = " + array.get(minIndex).length() + ", " + array.get(minIndex));
-        System.out.println("Min len = " + array.get(maxIndex).length() + ", " + array.get(maxIndex));
+        System.out.println("Max len = " + array.get(maxIndex).length() + ", " + array.get(maxIndex));
     }
 }
