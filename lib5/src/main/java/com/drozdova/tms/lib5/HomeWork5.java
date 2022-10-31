@@ -31,5 +31,11 @@ public class HomeWork5 {
 
         phone1.receiveCall("Ivan", phone1.getNumber());
         phone1.sendMessage(phonesList);
+
+        Pegion pegion = new Pegion();
+        pegion.fly();
+
+        Penguin penguin = new Penguin();
+
     }
 }
