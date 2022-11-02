@@ -9,9 +9,6 @@ public class Produser implements Runnable{
 
     @Override
     public void run() {
-        for (int i = 0; i < 9; i++) {
-            store.put();
-        }
-
+        store.put(5);
     }
 }
