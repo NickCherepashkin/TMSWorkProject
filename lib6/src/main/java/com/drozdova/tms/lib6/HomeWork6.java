@@ -13,5 +13,19 @@ public class HomeWork6 {
         System.out.println(card1);
         System.out.println(card2);
         System.out.println(card3);
+
+        Bike bike = new Bike("Bike", 2);
+        bike.ride();
+
+        Tractor tractor = new Tractor("Tractor", 4);
+        tractor.ride();
+        tractor.giveBeep();
+        tractor.turnOnMotor();
+
+        Car car = new Car("Audi", 4);
+        car.ride();
+        car.giveBeep();
+        car.turnOnMotor();
+
     }
 }
