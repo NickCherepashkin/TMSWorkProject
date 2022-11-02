@@ -27,5 +27,8 @@ public class HomeWork6 {
         car.giveBeep();
         car.turnOnMotor();
 
+        CarTask3 car3 = new CarTask3(new Wheel());
+        car3.ride();
+
     }
 }
