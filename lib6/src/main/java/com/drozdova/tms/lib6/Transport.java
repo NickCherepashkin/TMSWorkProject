@@ -1,6 +1,6 @@
 package com.drozdova.tms.lib6;
 
-public class Transport implements ITransport{
+abstract class Transport{
     private String type;
     private int wheelsNumber;
 
@@ -17,8 +17,5 @@ public class Transport implements ITransport{
         return wheelsNumber;
     }
 
-    @Override
-    public void ride() {
-        System.out.println(this.type + " rides...");
-    }
+    abstract void ride();
 }

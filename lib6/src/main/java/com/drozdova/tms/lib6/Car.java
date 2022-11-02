@@ -7,6 +7,11 @@ public class Car extends Transport implements ICar{
     }
 
     @Override
+    void ride() {
+        System.out.println("Car rides...");
+    }
+
+    @Override
     public void turnOnMotor() {
         System.out.println(getType() + " turned on the motor.");
     }

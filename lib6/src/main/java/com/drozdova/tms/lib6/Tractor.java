@@ -1,8 +1,14 @@
 package com.drozdova.tms.lib6;
 
 public class Tractor extends Transport implements ICar{
+
     public Tractor(String type, int wheelsNumber) {
         super(type, wheelsNumber);
+    }
+
+    @Override
+    void ride() {
+        System.out.println("Tractor rides...");
     }
 
     @Override
