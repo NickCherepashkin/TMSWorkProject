@@ -25,9 +25,15 @@ public class Store {
             }
         }
 
-        product++;
-        System.out.println("producer made 1 product");
-        System.out.println("products available: " + product);
-        notify();
+        try {
+            Thread.sleep(300);
+            product++;
+            System.out.println("producer made 1 product");
+            System.out.println("products available: " + product);
+            notify();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 }
