@@ -1,6 +1,7 @@
 package com.drozdova.tms.lib9;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,11 +9,12 @@ import javax.xml.stream.events.Characters;
 
 public class HomeWork9 {
     public static void main(String[] args) {
-//        task1();
-//        task2();
-//        task3();
-//        task4();
+        task1();
+        task2();
+        task3();
+        task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -111,8 +113,8 @@ public class HomeWork9 {
             }
         }
 
-        for(int i = 0; i < mas.length; i++) {
-            System.out.print(mas[i] + " ");
+        for (int ma : mas) {
+            System.out.print(ma + " ");
         }
     }
 
@@ -133,5 +135,25 @@ public class HomeWork9 {
         }
         System.out.println("Max element: " + max);
         System.out.println("Max element index: " + indexMax);
+    }
+
+    public static void task6() {
+        int[] mas = {21, 71, 55, 20, 29, 5, 7, 10, 19, 18, 23, 70};
+
+        boolean isSorted = false;
+        int item;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < mas.length - 1; i++) {
+                if (mas[i] > mas[i + 1]) {
+                    item = mas[i];
+                    mas[i] = mas[i + 1];
+                    mas[i + 1] = item;
+                    isSorted = false;
+                }
+            }
+        }
+
+        System.out.println(Arrays.toString(mas));
     }
 }
