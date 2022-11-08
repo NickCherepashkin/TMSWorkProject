@@ -15,6 +15,7 @@ public class HomeWork9 {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -152,6 +153,26 @@ public class HomeWork9 {
                     isSorted = false;
                 }
             }
+        }
+
+        System.out.println(Arrays.toString(mas));
+    }
+
+    public static void task7() {
+        int [] mas = {88,39,22,44,65,1,12,54,67,20,2,9,39};
+
+        int currentItem;
+        int newIndex;
+        for(int i = 1; i < mas.length; i++) {
+            currentItem = mas[i];
+            newIndex = i - 1;
+
+            while((newIndex >= 0) && currentItem < mas[newIndex]) {
+                mas[newIndex + 1] = mas[newIndex];
+                newIndex--;
+            }
+
+            mas[newIndex + 1] = currentItem;
         }
 
         System.out.println(Arrays.toString(mas));
