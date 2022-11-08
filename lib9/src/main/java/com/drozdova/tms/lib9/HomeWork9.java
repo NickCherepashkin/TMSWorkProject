@@ -177,4 +177,4 @@ public class HomeWork9 {
 
         System.out.println(Arrays.toString(mas));
     }
-}
+}   
