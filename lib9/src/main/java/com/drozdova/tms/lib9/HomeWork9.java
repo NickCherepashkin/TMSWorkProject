@@ -1,11 +1,8 @@
 package com.drozdova.tms.lib9;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-
-import javax.xml.stream.events.Characters;
 
 public class HomeWork9 {
     public static void main(String[] args) {
